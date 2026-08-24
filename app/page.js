@@ -320,7 +320,7 @@ export default function Home() {
               <span className="section-subtitle">Our Destinations</span>
               <h2 className="section-title">Explore the World</h2>
             </div>
-            <Link href="/destinations" className="btn btn-outline">
+            <Link href="/destinations" className="btn btn-outline desktop-only-btn">
               View All
               <svg className="arrow-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
@@ -367,6 +367,15 @@ export default function Home() {
               &#10095;
             </button>
           </div>
+
+          <div className="mobile-only-btn" style={{ display: "flex", justifyContent: "center", width: "100%" }}>
+            <Link href="/destinations" className="btn btn-outline" style={{ marginTop: "24px" }}>
+              View All
+              <svg className="arrow-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+              </svg>
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -379,7 +388,7 @@ export default function Home() {
             <p className="banner-desc">
               At Wanderlust Tripping, we invite you to embark on a thrilling journey and explore the world with us. Our international packages cover everything from luxury escapes to adventure backpackings.
             </p>
-            <Link href="/destinations?tab=international" className="btn btn-primary">
+            <Link href="/destinations?tab=international" className="btn btn-primary desktop-only-btn">
               Explore International
               <svg className="arrow-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
@@ -393,6 +402,15 @@ export default function Home() {
               alt="Passenger aircraft flying in cloudless blue sky"
             />
           </div>
+
+          <div className="mobile-only-btn" style={{ display: "flex", justifyContent: "center", width: "100%" }}>
+            <Link href="/destinations?tab=international" className="btn btn-primary" style={{ marginTop: "24px" }}>
+              Explore International
+              <svg className="arrow-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+              </svg>
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -404,7 +422,7 @@ export default function Home() {
               <span className="section-subtitle" style={{ color: "var(--accent-color)" }}>Featured Packages</span>
               <h2 className="section-title">Design Your Customized Package</h2>
             </div>
-            <Link href="/packages" className="btn btn-accent">
+            <Link href="/packages" className="btn btn-accent desktop-only-btn">
               View All Packages
               <svg className="arrow-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
@@ -444,6 +462,15 @@ export default function Home() {
                 </div>
               </div>
             ))}
+          </div>
+
+          <div className="mobile-only-btn" style={{ display: "flex", justifyContent: "center", width: "100%" }}>
+            <Link href="/packages" className="btn btn-accent" style={{ marginTop: "32px" }}>
+              View All Packages
+              <svg className="arrow-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+              </svg>
+            </Link>
           </div>
         </div>
       </section>

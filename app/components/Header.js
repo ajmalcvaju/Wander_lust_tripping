@@ -96,16 +96,29 @@ export default function Header() {
       {/* Mobile Drawer menu */}
       <div className={`mobile-menu-overlay ${isMobileMenuOpen ? "open" : ""}`} onClick={() => setIsMobileMenuOpen(false)}>
         <div className="mobile-sidebar" onClick={(e) => e.stopPropagation()}>
-          <button
-            className="mobile-close-btn"
-            onClick={() => setIsMobileMenuOpen(false)}
-            aria-label="Close menu"
-            id="menu-close-btn"
-          >
-            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
-            </svg>
-          </button>
+          <div className="mobile-menu-header">
+            <div className="mobile-menu-branding">
+              <img 
+                src="/wander_lust_logo.png" 
+                alt="Wanderlust Logo" 
+                className="mobile-menu-logo"
+              />
+              <div className="mobile-menu-title-group">
+                <span className="mobile-menu-title">WANDERLUST</span>
+                <span className="mobile-menu-subtitle">Tripping</span>
+              </div>
+            </div>
+            <button
+              className="mobile-close-btn"
+              onClick={() => setIsMobileMenuOpen(false)}
+              aria-label="Close menu"
+              id="menu-close-btn"
+            >
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+            </button>
+          </div>
           
           <ul className="mobile-nav-links">
             {navLinks.map((link) => (
@@ -121,22 +134,24 @@ export default function Header() {
             ))}
           </ul>
 
-          <div style={{ marginTop: "auto", borderTop: "1px solid #e5e7eb", paddingTop: "20px" }}>
-            <p style={{ fontSize: "14px", fontWeight: "600", color: "#111827", marginBottom: "10px" }}>CONTACT US</p>
-            <div style={{ display: "flex", flexDirection: "column", gap: "6px", marginBottom: "10px" }}>
-              <a href="tel:+916235869232" style={{ display: "block", fontSize: "15px", color: "#056839", fontWeight: "700" }}>
-                +91 62358 69232
-              </a>
-              <a href="tel:+916235769232" style={{ display: "block", fontSize: "15px", color: "#056839", fontWeight: "700" }}>
-                +91 62357 69232
-              </a>
-              <a href="tel:+917303669232" style={{ display: "block", fontSize: "15px", color: "#056839", fontWeight: "700" }}>
-                +91 73036 69232
-              </a>
+          <div className="mobile-menu-footer">
+            <h4>Connect With Us</h4>
+            <div className="mobile-menu-contact-card">
+              <div className="mobile-menu-contact-item">
+                <span className="mobile-menu-contact-icon">📞</span>
+                <div className="mobile-menu-phones">
+                  <a href="tel:+916235869232">+91 62358 69232</a>
+                  <a href="tel:+916235769232">+91 62357 69232</a>
+                  <a href="tel:+917303669232">+91 73036 69232</a>
+                </div>
+              </div>
+              <div className="mobile-menu-contact-item" style={{ marginTop: "12px" }}>
+                <span className="mobile-menu-contact-icon">✉</span>
+                <a href="mailto:info@wanderlusttripping.com" className="mobile-menu-email">
+                  info@wanderlusttripping.com
+                </a>
+              </div>
             </div>
-            <a href="mailto:info@wanderlusttripping.com" style={{ display: "block", fontSize: "14px", color: "#4b5563" }}>
-              info@wanderlusttripping.com
-            </a>
           </div>
         </div>
       </div>
