@@ -2274,22 +2274,25 @@ img {
     display: block;
   }
   .hero-section {
-    height: 80vh;
+    height: 85vh;
     min-height: 520px;
   }
   .slide-content {
     max-width: 100%;
+    padding-right: 75px;
   }
   .hero-title {
-    font-size: 34px;
-    margin-bottom: 16px;
+    font-size: 26px;
+    line-height: 1.2;
+    margin-bottom: 12px;
   }
   .hero-desc {
-    font-size: 15px;
-    margin-bottom: 24px;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
   }
   .slide-overlay {
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.92) 50%, rgba(255, 255, 255, 0.7) 100%);
+    background: rgba(255, 255, 255, 0.82);
   }
   .decorative-doodles {
     display: none;
