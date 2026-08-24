@@ -22,7 +22,7 @@ const SLIDES = [
     tagline: "International Gateways",
     title: "JOURNEY BEYOND BOUNDARIES",
     desc: "Embark on thrilling international journeys to Vietnam, Thailand, Maldives, Bali, UAE, and Malaysia. Let us handle your flights, visas, and itineraries seamlessly.",
-    bg: "https://images.unsplash.com/photo-1569154941061-e231b4725ef1?auto=format&fit=crop&w=1920&q=80"
+    bg: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1920&q=80"
   }
 ];
 
@@ -293,7 +293,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div>
+          <div className="about-content">
             <span className="section-subtitle">About Us</span>
             <h2 className="about-desc-heading">We Are Wanderlust Tripping</h2>
             <p className="about-text" style={{ fontWeight: 500 }}>

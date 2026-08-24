@@ -35,7 +35,7 @@ export default function About() {
       {/* 2. Company Story & Why Choose Us Section */}
       <section className="section-padding" style={{ backgroundColor: "var(--white)" }}>
         <div className="container">
-          <div className="about-snip" style={{ gridTemplateColumns: "1.1fr 0.9fr", gap: "60px" }}>
+          <div className="about-snip">
             <div>
               <span className="section-subtitle">Our Journey</span>
               <h2 className="about-desc-heading" style={{ fontSize: "36px", marginBottom: "20px" }}>Decade of Travel Excellence</h2>
