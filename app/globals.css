@@ -2374,6 +2374,12 @@ img {
   display: none !important;
 }
 
+.inclusions-exclusions-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
 /* --- Responsive Adjustments --- */
 @media (max-width: 1024px) {
   .hero-title {
@@ -2400,6 +2406,10 @@ img {
 }
 
 @media (max-width: 768px) {
+  .inclusions-exclusions-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
   .section-padding {
     padding: 60px 0;
   }
@@ -2564,9 +2574,10 @@ img {
     gap: 24px;
   }
   .footer-top {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
   }
   .footer-bottom {
     flex-direction: column;

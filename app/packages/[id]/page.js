@@ -146,7 +146,7 @@ export default function PackageDetailPage({ params }) {
               </div>
 
               {/* Inclusions & Exclusions */}
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "24px" }} className="booking-form">
+              <div className="inclusions-exclusions-grid">
                 
                 {/* Inclusions */}
                 <div className="info-card-block" style={{ background: "var(--white)", padding: "24px", borderRadius: "12px", boxShadow: "var(--shadow-sm)", borderTop: "4px solid var(--primary-color)" }}>
